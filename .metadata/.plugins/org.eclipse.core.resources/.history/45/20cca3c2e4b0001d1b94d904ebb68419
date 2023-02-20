@@ -1,0 +1,12 @@
+package com.bvr;
+
+@RestController
+public class MyEndPoints {
+
+	@RequestMapping("/mypage")
+	public String myString() {
+		return "First Microservice example";
+	}
+	
+	
+}
