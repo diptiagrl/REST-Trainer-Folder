@@ -1,0 +1,6 @@
+
+server.port = 9000
+
+server.servlet.context-path=/citibank
+
+citiprops.greeting = Thank You and Visit Again 
