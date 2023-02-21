@@ -1,0 +1,13 @@
+3 docker build -t restservice .
+   4 docker images
+   5 docker run -p 8090:9000 restservice
+
+
+   another prompt
+
+   docker images
+
+   docker ps -a 
+
+   docker stop <<container id >>
+   

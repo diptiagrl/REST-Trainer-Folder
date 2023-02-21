@@ -779,3 +779,17 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2023-02-21 12:15:09,490 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\REST\hr-service\src\test\resources
 2023-02-21 12:15:34,750 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-02-21 12:15:34,750 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-21 12:15:34,753 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\REST\hr-service\src\test\resources
+2023-02-21 12:53:25,832 [Worker-54: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:FirstApplication:0.0.1-SNAPSHOT @ C:\CLASSROOM\REST\FirstApplication\pom.xml.
+2023-02-21 12:53:26,152 [Worker-54: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FirstApplication/src/main/java
+2023-02-21 12:53:26,152 [Worker-54: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FirstApplication/src/main/resources
+2023-02-21 12:53:26,155 [Worker-54: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FirstApplication/src/main/resources
+2023-02-21 12:53:26,157 [Worker-54: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FirstApplication/src/test/java
+2023-02-21 12:53:26,340 [Worker-54: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2023-02-21 12:53:26,823 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-21 12:53:26,824 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-21 12:53:26,828 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\REST\FirstApplication\src\test\resources
+2023-02-21 12:57:36,960 [Worker-51: Launching Executing install in C__CLASSROOM_REST_FirstApplication] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\CLASSROOM\REST\FirstApplication
+2023-02-21 12:57:36,960 [Worker-51: Launching Executing install in C__CLASSROOM_REST_FirstApplication] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dstyle.color=always install
+2023-02-21 12:57:54,900 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-21 12:57:54,903 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
