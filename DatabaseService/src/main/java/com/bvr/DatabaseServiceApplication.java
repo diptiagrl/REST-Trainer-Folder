@@ -35,6 +35,49 @@ public class DatabaseServiceApplication implements CommandLineRunner{
 		repository.save(new Book("Java"));
 		repository.save(new Book("Javascript"));
 		repository.save(new Book("Kotlin"));
+		
+		
+		System.out.println("");
+		
+		System.out.println("\n Find all Records ");
+		
+		repository.findAll().forEach(x -> System.out.println(x));
+
+	
+		System.out.println("");
+		
+		System.out.println("\n Find by id Record ");
+		
+		repository.findById(4L).ifPresent(x -> System.out.println(x));
+		
+		
+		System.out.println("");
+		
+		System.out.println("\n Find By Name Records ");
+		
+		repository.findByName("Java").forEach(x -> System.out.println(x));
+
+		
+		System.out.println("");
+		
+		System.out.println("\n Update Records ");
+		
+		repository.findById(52L).ifPresent(x -> {
+			System.out.println(x);
+			x.setName("Python - pySpark");
+			repository.save(x);
+		});
+		
+		
+		System.out.println("\n Delete by Book Id");
+		
+		Book bookToDelete = repository.findById(4L).get();
+		
+		System.out.println("Book To Delete : " + bookToDelete.getName());
+		
+		repository.delete(bookToDelete);
+		
+		
 	}
 	
 	
