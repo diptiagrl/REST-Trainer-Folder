@@ -1,0 +1,94 @@
+************************************************************************************
+Commands to create JDK image and run Spring application on container(Dockerfile):
+****************************************************************************************
+FROM openjdk:latest
+
+LABEL MAINTAINER Dipti Agrawal
+
+EXPOSE 9010
+
+COPY FirstApplication-0.0.1-SNAPSHOT.jar .
+
+CMD java -jar FirstApplication-0.0.1-SNAPSHOT.jar 
+
+
+**********************************************************************************************
+Commands to view container
+**********************************************************************************************
+3 docker build -t restservice .
+   4 docker images
+   5 docker run -p 8090:9000 restservice
+
+
+   another prompt
+
+   docker images
+
+   docker ps -a 
+
+   docker stop <<container id >>
+
+************************************************************************************************
+Moviedb url
+*************************************************************************************************
+https://api.themoviedb.org/3/movie/700?api_key=55fd3b2e904fd20e99f052117df1b859&language=en-US
+
+
+****************************************************************************************************
+commands to create mysql database service and php service and run in two separate containers (file name- mysql.yml):
+********************************************************************************************************
+version : '3.1'
+
+services :
+  db :
+    image : mysql
+    command : --default-authentication-plugin=mysql_native_password
+    restart : always
+    ports :
+      - 3306:3306
+    environment :
+      MYSQL_ROOT_PASSWORD : example
+
+  adminer :
+    image : adminer 
+    restart : always
+    ports :
+      - 8080:8080
+
+*************************************************************************************************************
+commands to be run in command prompt to run  mysql server
+*************************************************************************************************************
+docker-compose -f mysql.yml up
+
+
+
+docker images
+   3 docker ps
+   4 docker network ls
+   5 docker network prune
+   6 docker network ls
+
+****************************************************************************************************************
+Process for MONGODB
+****************************************************************************************************************
+
+1st step - INSTALL MONGODB
+
+2nd step - GO TO ROOT LOCATION OF MONGODB
+C:\Program Files\MongoDB\Server\6.0\bin
+
+3rd step -
+CREATE ONE EMPTY FOLDER CALLED C:\MONGODB-FILES
+
+Now in in cmd prompt:
+mongod --dbpath c:\MONGODB-FILES
+
+Then: 
+START MONGODB COMPASS UI
+
+NOW IN BROWSER 
+http://localhost:8080/home
+
+
+ 
+
